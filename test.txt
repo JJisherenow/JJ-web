@@ -1,0 +1,70 @@
+EDUCATION 
+Rutgers Business School	May. 2025 
+M.S. in Quantitative Finance, GPA 3.7  	                             Newark, NJ                                                
+Courses: Derivative, Data Visualization, Financial Time Series, Quantitative Trading Strategies, Numerical Analysis, Fixed Income, Optimization, Econometrics, Stochastic Process.
+
+South China University of Technology                                                                                                                                  Jun. 2023         
+B.E. in Robotics Engineering & B.E. in Finance, GPA 3.6	Guangzhou, China
+Courses: Data structure, Statistics, Data Analysis and Modeling, Probability, Linear Algebra, Calculus, Corporate Finance, Machine Vision, Embedded System and Design, Natural Language Processing, Principle of Economics, 3D Printing.
+
+SKILLS 
+Programming: Python(Pandas, Numpy, Scikit-learn), C++, SQL, EXCEL, R, Matlab, Tableau, Git.
+Knowledge Areas: Machine Learning, Data Analysis and Manipulation, Risk Management, Option Pricing, CTA, Alpha Mining, Financial Modeling, Portfolio Management, Model Validation, Stress Test, Regression, VaR, TCA.
+Trading Products: Equities, Options, Futures, Commodities, Fixed Income, Cryptocurrency, ETF.
+
+WORK EXPERIENCE 
+SMBC Capital Market	Feb. 2025 - Now
+Market Risk and Control Intern - Portfolio Analytics	New York, NY
+Supporting trading desk in different aspects of the trading process, including marking curves/volatility, daily risk and P&L reconciliation, further analysis of risk/P&L which covered different product, including IR swap, cap/floor swap, cross currency swap, forward FX swap, Euro swaption and Bermuda swaption. 
+Collaborating with Quantitative Research team in Marking volatilities and curves of rates market. Calibrating volatilities using SABR models and marking curves including swap curve, strip curve, convexity spread, cross currency basis spread, OIS spread curve etc.
+Conducting P&L Analysis and risk analysis. Collaborate with traders/quant to find root cause and refine valuation algorithm when spot abnormality in P&L or day over day risk changes
+Constructing tools in Python to automate processes in daily trading activities to help trader and desk improve efficiency.
+Acted as a point person between front, middle, and back-office, which helped middle and back office to resolve any portfolio discrepancies and worked with related personnel to improve the efficiency of the daily process.
+
+Quantel AI	Jun. 2024 - Aug. 2024
+Quantitative Research Intern	New York, NY
+Constructed long-only stock portfolios using a multi-factor model to outperform the S&P 500. Identified and optimized factors based on fundamental data such as cash flow, profitability, growth potential, and interest rates and ensured these factors achieving superior performance against benchmark after neutralization against Barra factors.
+Designed a Python-based single-factor backtesting framework, calculating key performance metrics (IC values, Sharpe ratios, and annualized returns) for each factor. Conducted comprehensive evaluations to refine and enhance factor performance.
+Developed a dynamic factor calculation tool by creating a Python class with multiple functions which allowed efficient calculation of various factor values directly from formulas, streamlining the research process and improving the accuracy of factor inputs in backtests.
+Managed extensive data processing tasks, including cleaning, visualizing, and organizing large-scale stock and factor datasets. Used the Ray framework to speed up data processing and scale backtesting.
+The best single factor achieved an annualized return of 20.78% from 2015 to 2024 through backtest with 1.43 Sharpe ratio.
+
+
+City Investment Solutions	Oct. 2023 - Feb. 2024
+Junior Trader Intern (FX Market)	London, UK
+Analyzed historical time series data using the MT4 platform with 15-minute candlestick charts across eight foreign exchange pairs. Executed strategies like mean reversion, trend breakout, and Bollinger Bands, based on technical indicators such as the Relative Strength Index (RSI) and Stochastic Oscillator.
+Traded foreign currencies with an initial capital of $300 and achieved a 15.38% return with 58.78% success rate.
+
+PROJECTS
+Research and Optimization of Futures Trading Strategies
+Developed a time series backtesting framework to backtest various futures strategies, covering trading rule definition, parameter initialization, signal generation, and P&L evaluation.
+Replicated research reports on high-frequency futures volume-price factors and verified their effectiveness through simple backtesting, identifying strategy limitations.
+Improved strategy performance by using main contracts for backtesting, excluding signals on delivery days and before long holidays, and introducing a stop-loss mechanism, improving the Sharpe ratio from 0.44 to 0.64.
+Recreated and optimized a classic CTA strategy (ATR-based breakout) using multi-asset backtesting, improving annualized returns by adjusting entry/exit rules and fine-tuning parameters such as ATR periods and signal thresholds for increased robustness in volatile market conditions.
+
+Stock Factor Investment Strategy using Machine Learning
+Developed an alpha strategy based on XGBoost model to construct a Chinese-traded stock portfolio.
+Utilized the exponentially decayed Rank Information Coefficient values from the past year to select alpha to forecast the weekly price amplitude and construct the portfolio based on the predicted probability and expected returns.
+Achieved an annualized return of 18.15% from 2012 to 2022 through a backtest with a Sharpe ratio of 0.76.
+
+JPMorgan Chase & Co. Quantitative Research Virtual Experience Program	
+Applied a seasonal regression model in Python to analyze and extrapolate monthly natural gas prices. Provided the commodity trading desk with refined contract pricing estimations, ensuring more accurate future price predictions.
+Developed a pricing model to assess the value of natural gas storage contracts. Provided the trading desk with a mechanism to optimize trade strategies for clients.
+Developed a logistic regression model for the retail banking arm to predict loan defaults based on customer data. Leveraged the model to estimate potential losses, aiding for informed capital allocation for potential defaults.
+
+Volatility Option Trading and Delta Hedging Strategy
+Developed and implemented an option selling strategy featuring an automated delta hedging mechanism and an integrated risk management tool. This included greeks calculation and predefined stop-loss parameters to enhance trading  efficiency.
+Conducted a detailed theoretical analysis of option profit and loss attributions across Delta, Gamma, and Theta exposures. Demonstrated that the profitability of option selling is predominantly influenced by the product of dollar gamma and the disparity between implied and realized volatility. 
+Programmed a delta hedging bot employing TWAP for the execution of large volume trades, incorporating a stoploss threshold of 5% to safeguard against excessive losses in scenarios where realized volatility significantly exceeds implied volatility, such as during market crashes.
+Engineered an automated system for rolling positions from short-term to longer-term options to mitigate risks associated with high dollar gamma, ensuring more stable and predictable exposure over the option's life.
+
+CERTIFICATIONS & OTHERS
+WorldQuant Alpha Challenge (Gold Level Top 1%)	
+Developed over 20 predictive stock factors by integrating various datasets and analyzing stock market, company fundamentals, and sentiment data, covering aspects like volatility, momentum, and growth ability.
+
+Director’s Award of Excellence
+
+Hobbies: Poker, Basketball, Rubik’s Cube, Movies.
+
+	
+

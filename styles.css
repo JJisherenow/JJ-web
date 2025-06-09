@@ -126,9 +126,9 @@ html {
 }
 
 .hero-image img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    width: 500px;
+    height: auto;
+    border-radius: 12px;
     object-fit: cover;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -175,37 +175,132 @@ h2 {
     color: #333;
 }
 
-/* 研究部分 */
-.research-list {
+/* 教育经历部分 */
+.education-list {
     margin-top: 2rem;
 }
 
-.research-item {
+.education-item {
     background-color: #ffffff;
-    padding: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    border-left: 4px solid #4A90E2;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.education-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.education-date {
+    color: #4A90E2;
+    font-weight: 500;
+    font-size: 0.9rem;
+    background-color: #f0f7ff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.education-institution {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4A90E2;
+    margin-bottom: 0.5rem;
+}
+
+.education-location {
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.education-description {
+    color: #666;
     line-height: 1.6;
 }
 
-.research-item strong {
+/* 工作经历部分 */
+.experience-list {
+    margin-top: 2rem;
+}
+
+.experience-item {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
     color: #333;
+    margin: 0;
 }
 
-.research-item em {
-    color: #666;
-}
-
-.research-item a {
+.experience-date {
+    background-color: #f0f8ff;
     color: #4A90E2;
-    text-decoration: none;
-    margin-left: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
-.research-item a:hover {
-    text-decoration: underline;
+.experience-company {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4A90E2;
+    margin-bottom: 0.5rem;
+}
+
+.experience-location {
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.experience-description {
+    color: #666;
+    line-height: 1.6;
 }
 
 /* 项目部分 */
@@ -241,46 +336,6 @@ h2 {
     line-height: 1.6;
 }
 
-/* 博客部分 */
-.blog-list {
-    margin-top: 2rem;
-}
-
-.blog-item {
-    background-color: #ffffff;
-    padding: 2rem;
-    margin-bottom: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    transition: box-shadow 0.3s ease;
-}
-
-.blog-item:hover {
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-.blog-item h3 a {
-    color: #333;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600;
-}
-
-.blog-item h3 a:hover {
-    color: #4A90E2;
-}
-
-.blog-date {
-    color: #888;
-    font-size: 0.9rem;
-    margin: 0.5rem 0 1rem 0;
-}
-
-.blog-item p:last-child {
-    color: #666;
-    line-height: 1.6;
-}
-
 /* 其他兴趣部分 */
 .misc-list {
     list-style: none;
@@ -311,28 +366,73 @@ h2 {
 /* 联系部分 */
 .contact-info {
     margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 }
 
-.contact-info p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    min-width: 250px;
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    color: #4A90E2;
+    flex-shrink: 0;
+}
+
+.contact-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.contact-content strong {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
 }
 
 .contact-info a {
     color: #4A90E2;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
+    color: #357abd;
     text-decoration: underline;
 }
 
 /* 页脚 */
 .footer {
-    background-color: #333;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #333;
     text-align: center;
     padding: 2rem 0;
+    border-top: 1px solid #e1e5e9;
 }
 
 .footer a {
@@ -377,6 +477,11 @@ h2 {
         text-align: center;
     }
     
+    .hero-image img {
+        width: 350px;
+        max-width: 90%;
+    }
+    
     .hero-text h1 {
         font-size: 2rem;
     }
@@ -395,6 +500,30 @@ h2 {
     
     .project-item {
         padding: 1.5rem;
+    }
+    
+    .education-header,
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .education-date,
+    .experience-date {
+        align-self: flex-start;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .contact-item {
+        min-width: 280px;
+        width: 100%;
+        max-width: 350px;
     }
 }
 
@@ -424,6 +553,11 @@ h2 {
         padding: 100px 0 60px;
     }
     
+    .hero-image img {
+        width: 250px;
+        max-width: 85%;
+    }
+    
     .hero-text h1 {
         font-size: 1.8rem;
     }
@@ -439,5 +573,27 @@ h2 {
     .projects-list {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    
+    .education-item,
+    .experience-item {
+        padding: 1.5rem;
+    }
+    
+    .contact-item {
+        min-width: unset;
+        width: 100%;
+        max-width: unset;
+        padding: 1rem;
+    }
+    
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .contact-icon svg {
+        width: 20px;
+        height: 20px;
     }
 } 

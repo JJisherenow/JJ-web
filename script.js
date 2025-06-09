@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
     
     // 为需要动画的元素添加观察
-    const animatedElements = document.querySelectorAll('.research-item, .project-item, .blog-item');
+    const animatedElements = document.querySelectorAll('.education-item, .experience-item, .project-item');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
