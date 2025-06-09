@@ -464,13 +464,25 @@ h2 {
     
     .nav-header {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 100%;
+        position: relative;
+    }
+    
+    .nav-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .nav-logo a {
         font-size: 1.2rem;
+    }
+    
+    .language-switcher {
+        position: absolute;
+        right: 0;
     }
     
     .nav-menu {
@@ -486,10 +498,6 @@ h2 {
     .nav-link {
         font-size: 0.9rem;
         padding: 0.3rem 0.5rem;
-    }
-    
-    .language-switcher {
-        order: 1;
     }
     
     .lang-btn {
@@ -581,13 +589,25 @@ h2 {
     
     .nav-header {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 100%;
+        position: relative;
+    }
+    
+    .nav-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .nav-logo a {
         font-size: 1.1rem;
+    }
+    
+    .language-switcher {
+        position: absolute;
+        right: 0;
     }
     
     .nav-menu {
@@ -606,10 +626,6 @@ h2 {
     .nav-link {
         font-size: 0.85rem;
         padding: 0.25rem 0.4rem;
-    }
-    
-    .language-switcher {
-        order: 1;
     }
     
     .lang-btn {
