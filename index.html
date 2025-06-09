@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张三 - 个人主页</title>
+    <title data-en="John Doe - Personal Website" data-zh="张三 - 个人主页">John Doe - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -12,15 +12,20 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">张三</a>
+                <a href="#home" data-en="John Doe" data-zh="张三">John Doe</a>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">关于我</a></li>
-                <li><a href="#research" class="nav-link">研究</a></li>
-                <li><a href="#projects" class="nav-link">项目</a></li>
-                <li><a href="#blog" class="nav-link">博客</a></li>
-                <li><a href="#contact" class="nav-link">联系</a></li>
+                <li><a href="#home" class="nav-link" data-en="About" data-zh="关于我">About</a></li>
+                <li><a href="#research" class="nav-link" data-en="Research" data-zh="研究">Research</a></li>
+                <li><a href="#projects" class="nav-link" data-en="Projects" data-zh="项目">Projects</a></li>
+                <li><a href="#blog" class="nav-link" data-en="Blog" data-zh="博客">Blog</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-zh="联系">Contact</a></li>
             </ul>
+            <div class="language-switcher">
+                <button id="lang-toggle" class="lang-btn">
+                    <span class="lang-text">中文</span>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -29,14 +34,14 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-image">
-                    <img src="https://via.placeholder.com/300x300/4A90E2/FFFFFF?text=照片" alt="个人照片">
+                    <img src="https://via.placeholder.com/300x300/4A90E2/FFFFFF?text=Photo" alt="Personal Photo">
                 </div>
                 <div class="hero-text">
-                    <h1>你好！我是张三。</h1>
-                    <p>我是一名研究员、计算机科学家和数学家，现居于北京。我在清华大学开始了我的职业生涯，专注于人工智能和机器学习的前沿研究。后来我创办了一家专注于应用AI研究的科技公司。</p>
-                    <p>我热爱构建有价值的事物——从创意到实现的整个过程。我认为我们有义务让世界变得比我们发现时更美好，我相信实现这一目标的最佳方式是通过技术创新和研究。最近，我对深度学习、自然语言处理和计算机视觉特别感兴趣。</p>
-                    <p>我认为自己是一个终身学习者——我在业余时间阅读教科书和研究论文。这不仅限于技术学科；我也花很多时间思考社会科学和人文学科。我热衷于有效的技术交流和写作；我偶尔在我的博客上发表我的文章。</p>
-                    <p>如果您想联系我，可以通过邮箱联系：<code>zhangsan@example.com</code>。我总是很兴奋能认识在技术领域做有趣事情的朋友。</p>
+                    <h1 data-en="Hi there! I'm John." data-zh="你好！我是张三。">Hi there! I'm John.</h1>
+                    <p data-en="I'm a researcher, computer scientist, and mathematician based out of New York. I began my career at a leading tech company, working on novel machine learning techniques and AI research. I later founded a startup focused on applied AI research backed by top investors." data-zh="我是一名研究员、计算机科学家和数学家，现居于北京。我在清华大学开始了我的职业生涯，专注于人工智能和机器学习的前沿研究。后来我创办了一家专注于应用AI研究的科技公司。">I'm a researcher, computer scientist, and mathematician based out of New York. I began my career at a leading tech company, working on novel machine learning techniques and AI research. I later founded a startup focused on applied AI research backed by top investors.</p>
+                    <p data-en="I really like building things–the entire process, from ideation to implementation. I think we have an obligation to leave the world better than we found it, and I believe my best way of doing so is through technological innovation and research. As of late, I've been most interested in deep learning, natural language processing, and computer vision." data-zh="我热爱构建有价值的事物——从创意到实现的整个过程。我认为我们有义务让世界变得比我们发现时更美好，我相信实现这一目标的最佳方式是通过技术创新和研究。最近，我对深度学习、自然语言处理和计算机视觉特别感兴趣。">I really like building things–the entire process, from ideation to implementation. I think we have an obligation to leave the world better than we found it, and I believe my best way of doing so is through technological innovation and research. As of late, I've been most interested in deep learning, natural language processing, and computer vision.</p>
+                    <p data-en="I consider myself a life-long learner–I read textbooks and research papers in my free time. This is not limited to technical subjects; I spend much of my time thinking about social sciences and humanities as well. I'm passionate about effective technical communication and writing; I occasionally post my writing on my blog." data-zh="我认为自己是一个终身学习者——我在业余时间阅读教科书和研究论文。这不仅限于技术学科；我也花很多时间思考社会科学和人文学科。我热衷于有效的技术交流和写作；我偶尔在我的博客上发表我的文章。">I consider myself a life-long learner–I read textbooks and research papers in my free time. This is not limited to technical subjects; I spend much of my time thinking about social sciences and humanities as well. I'm passionate about effective technical communication and writing; I occasionally post my writing on my blog.</p>
+                    <p data-en="If you'd like to contact me, I can be reached at: " data-zh="如果您想联系我，可以通过邮箱联系：">If you'd like to contact me, I can be reached at: <code>john.doe@example.com</code><span data-en=". I'm always excited to meet other folks doing interesting things in tech." data-zh="。我总是很兴奋能认识在技术领域做有趣事情的朋友。">. I'm always excited to meet other folks doing interesting things in tech.</span></p>
                 </div>
             </div>
         </div>
@@ -45,24 +50,24 @@
     <!-- 研究部分 -->
     <section id="research" class="research">
         <div class="container">
-            <h2>研究</h2>
-            <p>有关我研究的详细信息，请参阅相应页面。此外，我的Google Scholar档案可在<a href="#">这里</a>获得。</p>
+            <h2 data-en="Research" data-zh="研究">Research</h2>
+            <p data-en="For detailed information on my research, please see the appropriate page. Also, my Google Scholar profile is available " data-zh="有关我研究的详细信息，请参阅相应页面。此外，我的Google Scholar档案可在"><span data-en="For detailed information on my research, please see the appropriate page. Also, my Google Scholar profile is available " data-zh="有关我研究的详细信息，请参阅相应页面。此外，我的Google Scholar档案可在">For detailed information on my research, please see the appropriate page. Also, my Google Scholar profile is available </span><a href="#" data-en="here" data-zh="这里">here</a><span data-en="." data-zh="获得。">.</span></p>
             
             <div class="research-list">
                 <div class="research-item">
-                    <strong>张三</strong>, & 李四. (2023). 基于深度学习的自然语言处理新方法. <em>人工智能学报</em>. <a href="#">论文</a>
+                    <span data-en="**Doe, J.**, & Smith, A. (2023). Novel Deep Learning Approaches for Natural Language Processing. *Journal of Artificial Intelligence*. " data-zh="**张三**, & 李四. (2023). 基于深度学习的自然语言处理新方法. *人工智能学报*. "><strong data-en="Doe, J." data-zh="张三">Doe, J.</strong><span data-en=", & Smith, A. (2023). Novel Deep Learning Approaches for Natural Language Processing. " data-zh=", & 李四. (2023). 基于深度学习的自然语言处理新方法. ">, & Smith, A. (2023). Novel Deep Learning Approaches for Natural Language Processing. </span><em data-en="Journal of Artificial Intelligence" data-zh="人工智能学报">Journal of Artificial Intelligence</em>. </span><a href="#" data-en="Paper" data-zh="论文">Paper</a>
                 </div>
                 <div class="research-item">
-                    <strong>张三</strong>, 王五, & 赵六. (2023). 机器学习在医疗诊断中的应用研究. <em>计算机学报</em>. <a href="#">论文</a>
+                    <strong data-en="Doe, J." data-zh="张三">Doe, J.</strong><span data-en=", Johnson, B., & Wilson, C. (2023). Machine Learning Applications in Medical Diagnosis. " data-zh=", 王五, & 赵六. (2023). 机器学习在医疗诊断中的应用研究. ">, Johnson, B., & Wilson, C. (2023). Machine Learning Applications in Medical Diagnosis. </span><em data-en="Computer Science Journal" data-zh="计算机学报">Computer Science Journal</em>. <a href="#" data-en="Paper" data-zh="论文">Paper</a>
                 </div>
                 <div class="research-item">
-                    <strong>张三</strong>. (2022). 神经网络优化算法的理论分析. <em>软件学报</em>. <a href="#">论文</a>
+                    <strong data-en="Doe, J." data-zh="张三">Doe, J.</strong><span data-en=" (2022). Theoretical Analysis of Neural Network Optimization Algorithms. " data-zh=". (2022). 神经网络优化算法的理论分析. "> (2022). Theoretical Analysis of Neural Network Optimization Algorithms. </span><em data-en="Software Engineering Journal" data-zh="软件学报">Software Engineering Journal</em>. <a href="#" data-en="Paper" data-zh="论文">Paper</a>
                 </div>
                 <div class="research-item">
-                    <strong>张三</strong>, & 钱七. (2022). 计算机视觉在自动驾驶中的创新应用. <em>IEEE Transactions on AI</em>. <a href="#">论文</a>
+                    <strong data-en="Doe, J." data-zh="张三">Doe, J.</strong><span data-en=", & Brown, D. (2022). Innovative Applications of Computer Vision in Autonomous Driving. " data-zh=", & 钱七. (2022). 计算机视觉在自动驾驶中的创新应用. ">, & Brown, D. (2022). Innovative Applications of Computer Vision in Autonomous Driving. </span><em data-en="IEEE Transactions on AI" data-zh="IEEE Transactions on AI">IEEE Transactions on AI</em>. <a href="#" data-en="Paper" data-zh="论文">Paper</a>
                 </div>
                 <div class="research-item">
-                    陈八, <strong>张三</strong>, & 孙九. (2021). 强化学习算法的稳定性研究. <em>机器学习会议</em>. <a href="#">论文</a>
+                    <span data-en="Chen, L., " data-zh="陈八, ">Chen, L., </span><strong data-en="Doe, J." data-zh="张三">Doe, J.</strong><span data-en=", & Sun, M. (2021). Stability Research in Reinforcement Learning Algorithms. " data-zh=", & 孙九. (2021). 强化学习算法的稳定性研究. ">, & Sun, M. (2021). Stability Research in Reinforcement Learning Algorithms. </span><em data-en="Machine Learning Conference" data-zh="机器学习会议">Machine Learning Conference</em>. <a href="#" data-en="Paper" data-zh="论文">Paper</a>
                 </div>
             </div>
         </div>
@@ -71,25 +76,25 @@
     <!-- 项目部分 -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2>软件项目</h2>
-            <p>有关我软件项目的详细信息，请参阅相应页面。我的大部分研究都涉及令人兴奋的新颖计算实现；这些都记录在研究页面上。</p>
+            <h2 data-en="Software Projects" data-zh="软件项目">Software Projects</h2>
+            <p data-en="For detailed information on my software projects, please see the appropriate page. Most of my research has involved exciting and novel computational implementations; these are recorded on the research page." data-zh="有关我软件项目的详细信息，请参阅相应页面。我的大部分研究都涉及令人兴奋的新颖计算实现；这些都记录在研究页面上。">For detailed information on my software projects, please see the appropriate page. Most of my research has involved exciting and novel computational implementations; these are recorded on the research page.</p>
             
             <div class="projects-list">
                 <div class="project-item">
-                    <h3>智能数据分析平台</h3>
-                    <p>使用机器学习和深度学习技术构建的数据分析平台，能够自动识别数据模式并生成洞察报告。采用Python、TensorFlow和React技术栈开发。</p>
+                    <h3 data-en="Intelligent Data Analysis Platform" data-zh="智能数据分析平台">Intelligent Data Analysis Platform</h3>
+                    <p data-en="A data analysis platform built using machine learning and deep learning technologies that can automatically identify data patterns and generate insight reports. Developed using Python, TensorFlow, and React tech stack." data-zh="使用机器学习和深度学习技术构建的数据分析平台，能够自动识别数据模式并生成洞察报告。采用Python、TensorFlow和React技术栈开发。">A data analysis platform built using machine learning and deep learning technologies that can automatically identify data patterns and generate insight reports. Developed using Python, TensorFlow, and React tech stack.</p>
                 </div>
                 <div class="project-item">
-                    <h3>自然语言处理工具包</h3>
-                    <p>从零开始实现的中文自然语言处理工具包，包含分词、词性标注、命名实体识别等功能。实现了transformer架构和注意力机制。</p>
+                    <h3 data-en="Natural Language Processing Toolkit" data-zh="自然语言处理工具包">Natural Language Processing Toolkit</h3>
+                    <p data-en="A Chinese natural language processing toolkit implemented from scratch, including word segmentation, part-of-speech tagging, named entity recognition and other functions. Implemented transformer architecture and attention mechanisms." data-zh="从零开始实现的中文自然语言处理工具包，包含分词、词性标注、命名实体识别等功能。实现了transformer架构和注意力机制。">A Chinese natural language processing toolkit implemented from scratch, including word segmentation, part-of-speech tagging, named entity recognition and other functions. Implemented transformer architecture and attention mechanisms.</p>
                 </div>
                 <div class="project-item">
-                    <h3>计算机视觉应用</h3>
-                    <p>基于深度学习的图像识别和目标检测应用，使用OpenCV和PyTorch实现。能够实时处理视频流并进行目标追踪。</p>
+                    <h3 data-en="Computer Vision Application" data-zh="计算机视觉应用">Computer Vision Application</h3>
+                    <p data-en="Deep learning-based image recognition and object detection application implemented using OpenCV and PyTorch. Capable of real-time video stream processing and object tracking." data-zh="基于深度学习的图像识别和目标检测应用，使用OpenCV和PyTorch实现。能够实时处理视频流并进行目标追踪。">Deep learning-based image recognition and object detection application implemented using OpenCV and PyTorch. Capable of real-time video stream processing and object tracking.</p>
                 </div>
                 <div class="project-item">
-                    <h3>区块链数据分析系统</h3>
-                    <p>分析区块链交易数据的可视化系统，使用Web3技术和D3.js构建交互式图表，帮助用户理解区块链网络的活动模式。</p>
+                    <h3 data-en="Blockchain Data Analysis System" data-zh="区块链数据分析系统">Blockchain Data Analysis System</h3>
+                    <p data-en="A visualization system for analyzing blockchain transaction data, using Web3 technology and D3.js to build interactive charts to help users understand blockchain network activity patterns." data-zh="分析区块链交易数据的可视化系统，使用Web3技术和D3.js构建交互式图表，帮助用户理解区块链网络的活动模式。">A visualization system for analyzing blockchain transaction data, using Web3 technology and D3.js to build interactive charts to help users understand blockchain network activity patterns.</p>
                 </div>
             </div>
         </div>
@@ -98,22 +103,22 @@
     <!-- 博客部分 -->
     <section id="blog" class="blog">
         <div class="container">
-            <h2>博客</h2>
+            <h2 data-en="Blog" data-zh="博客">Blog</h2>
             <div class="blog-list">
                 <div class="blog-item">
-                    <h3><a href="#">深度学习的数学基础</a></h3>
-                    <p class="blog-date">2023年12月15日</p>
-                    <p>探讨深度学习背后的数学原理，包括线性代数、微积分和概率论在神经网络中的应用...</p>
+                    <h3><a href="#" data-en="Mathematical Foundations of Deep Learning" data-zh="深度学习的数学基础">Mathematical Foundations of Deep Learning</a></h3>
+                    <p class="blog-date" data-en="December 15, 2023" data-zh="2023年12月15日">December 15, 2023</p>
+                    <p data-en="Exploring the mathematical principles behind deep learning, including the application of linear algebra, calculus, and probability theory in neural networks..." data-zh="探讨深度学习背后的数学原理，包括线性代数、微积分和概率论在神经网络中的应用...">Exploring the mathematical principles behind deep learning, including the application of linear algebra, calculus, and probability theory in neural networks...</p>
                 </div>
                 <div class="blog-item">
-                    <h3><a href="#">人工智能的伦理思考</a></h3>
-                    <p class="blog-date">2023年11月28日</p>
-                    <p>随着AI技术的快速发展，我们需要思考人工智能带来的伦理问题和社会影响...</p>
+                    <h3><a href="#" data-en="Ethical Considerations in Artificial Intelligence" data-zh="人工智能的伦理思考">Ethical Considerations in Artificial Intelligence</a></h3>
+                    <p class="blog-date" data-en="November 28, 2023" data-zh="2023年11月28日">November 28, 2023</p>
+                    <p data-en="With the rapid development of AI technology, we need to think about the ethical issues and social impacts brought by artificial intelligence..." data-zh="随着AI技术的快速发展，我们需要思考人工智能带来的伦理问题和社会影响...">With the rapid development of AI technology, we need to think about the ethical issues and social impacts brought by artificial intelligence...</p>
                 </div>
                 <div class="blog-item">
-                    <h3><a href="#">机器学习项目的最佳实践</a></h3>
-                    <p class="blog-date">2023年10月10日</p>
-                    <p>分享在机器学习项目开发过程中积累的经验和最佳实践，从数据预处理到模型部署...</p>
+                    <h3><a href="#" data-en="Best Practices for Machine Learning Projects" data-zh="机器学习项目的最佳实践">Best Practices for Machine Learning Projects</a></h3>
+                    <p class="blog-date" data-en="October 10, 2023" data-zh="2023年10月10日">October 10, 2023</p>
+                    <p data-en="Sharing experiences and best practices accumulated in machine learning project development, from data preprocessing to model deployment..." data-zh="分享在机器学习项目开发过程中积累的经验和最佳实践，从数据预处理到模型部署...">Sharing experiences and best practices accumulated in machine learning project development, from data preprocessing to model deployment...</p>
                 </div>
             </div>
         </div>
@@ -122,12 +127,12 @@
     <!-- 其他兴趣 -->
     <section id="misc" class="misc">
         <div class="container">
-            <h2>其他兴趣</h2>
+            <h2 data-en="Miscellaneous" data-zh="其他兴趣">Miscellaneous</h2>
             <ul class="misc-list">
-                <li>我是一个狂热的摄影爱好者，专注于风景摄影和街头摄影。我经常在周末到各地采风，记录生活中的美好瞬间。</li>
-                <li>我非常喜欢户外运动，特别是登山和徒步。我正在逐步挑战国内的各个知名山峰，去年完成了华山和泰山的攀登！</li>
-                <li>我喜欢弹奏钢琴和吉他，音乐是我放松和创作灵感的重要来源。</li>
-                <li>我热爱阅读，不仅仅是技术书籍，还包括历史、哲学和文学作品。</li>
+                <li data-en="I'm an avid photography enthusiast, focusing on landscape and street photography. I often go to various places for photography on weekends, capturing beautiful moments in life." data-zh="我是一个狂热的摄影爱好者，专注于风景摄影和街头摄影。我经常在周末到各地采风，记录生活中的美好瞬间。">I'm an avid photography enthusiast, focusing on landscape and street photography. I often go to various places for photography on weekends, capturing beautiful moments in life.</li>
+                <li data-en="I really like outdoor sports, especially mountaineering and hiking. I'm gradually challenging various famous peaks in the country, and completed the ascent of Mount Hua and Mount Tai last year!" data-zh="我非常喜欢户外运动，特别是登山和徒步。我正在逐步挑战国内的各个知名山峰，去年完成了华山和泰山的攀登！">I really like outdoor sports, especially mountaineering and hiking. I'm gradually challenging various famous peaks in the country, and completed the ascent of Mount Hua and Mount Tai last year!</li>
+                <li data-en="I enjoy playing piano and guitar. Music is an important source of relaxation and creative inspiration for me." data-zh="我喜欢弹奏钢琴和吉他，音乐是我放松和创作灵感的重要来源。">I enjoy playing piano and guitar. Music is an important source of relaxation and creative inspiration for me.</li>
+                <li data-en="I love reading, not just technical books, but also history, philosophy, and literature." data-zh="我热爱阅读，不仅仅是技术书籍，还包括历史、哲学和文学作品。">I love reading, not just technical books, but also history, philosophy, and literature.</li>
             </ul>
         </div>
     </section>
@@ -135,13 +140,13 @@
     <!-- 联系部分 -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>联系我</h2>
-            <p>如果您想与我交流或合作，欢迎通过以下方式联系我：</p>
+            <h2 data-en="Contact Me" data-zh="联系我">Contact Me</h2>
+            <p data-en="If you'd like to communicate or collaborate with me, feel free to contact me through the following ways:" data-zh="如果您想与我交流或合作，欢迎通过以下方式联系我：">If you'd like to communicate or collaborate with me, feel free to contact me through the following ways:</p>
             <div class="contact-info">
-                <p><strong>邮箱：</strong> <a href="mailto:zhangsan@example.com">zhangsan@example.com</a></p>
-                <p><strong>GitHub：</strong> <a href="https://github.com/zhangsan">github.com/zhangsan</a></p>
-                <p><strong>LinkedIn：</strong> <a href="https://linkedin.com/in/zhangsan">linkedin.com/in/zhangsan</a></p>
-                <p><strong>微博：</strong> <a href="https://weibo.com/zhangsan">@张三的技术博客</a></p>
+                <p><strong data-en="Email:" data-zh="邮箱：">Email:</strong> <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/johndoe">github.com/johndoe</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
+                <p><strong data-en="Twitter:" data-zh="微博：">Twitter:</strong> <a href="https://twitter.com/johndoe" data-en="@johndoe" data-zh="@张三的技术博客">@johndoe</a></p>
             </div>
         </div>
     </section>
@@ -149,7 +154,7 @@
     <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 张三 由 <a href="#">HTML & CSS</a> 强力驱动</p>
+            <p><span data-en="© 2024 John Doe Powered by " data-zh="© 2024 张三 由 ">© 2024 John Doe Powered by </span><a href="#" data-en="HTML & CSS" data-zh="HTML & CSS">HTML & CSS</a></p>
         </div>
     </footer>
 

@@ -1,5 +1,54 @@
+// 语言切换功能
+let currentLanguage = 'en'; // 默认语言为英文
+
+function switchLanguage() {
+    currentLanguage = currentLanguage === 'en' ? 'zh' : 'en';
+    
+    // 更新HTML lang属性
+    document.documentElement.lang = currentLanguage;
+    
+    // 更新所有带有多语言属性的元素
+    const elementsWithLang = document.querySelectorAll('[data-en][data-zh]');
+    elementsWithLang.forEach(element => {
+        const text = element.getAttribute(`data-${currentLanguage}`);
+        if (text) {
+            element.textContent = text;
+        }
+    });
+    
+    // 更新页面标题
+    const title = document.querySelector('title');
+    if (title) {
+        const titleText = title.getAttribute(`data-${currentLanguage}`);
+        if (titleText) {
+            title.textContent = titleText;
+        }
+    }
+    
+    // 更新语言切换按钮文本
+    const langText = document.querySelector('.lang-text');
+    if (langText) {
+        langText.textContent = currentLanguage === 'en' ? '中文' : 'English';
+    }
+    
+    // 保存语言偏好到localStorage
+    localStorage.setItem('preferredLanguage', currentLanguage);
+}
+
 // 平滑滚动导航
 document.addEventListener('DOMContentLoaded', function() {
+    // 从localStorage读取语言偏好
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    if (savedLanguage && savedLanguage !== currentLanguage) {
+        switchLanguage();
+    }
+    
+    // 语言切换按钮事件
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+        langToggle.addEventListener('click', switchLanguage);
+    }
+    
     // 获取所有导航链接
     const navLinks = document.querySelectorAll('.nav-link');
     
@@ -106,7 +155,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 navigator.clipboard.writeText(email).then(function() {
                     // 创建临时提示
                     const toast = document.createElement('div');
-                    toast.textContent = '邮箱地址已复制到剪贴板！';
+                    const toastText = currentLanguage === 'en' ? 'Email address copied to clipboard!' : '邮箱地址已复制到剪贴板！';
+                    toast.textContent = toastText;
                     toast.style.cssText = `
                         position: fixed;
                         top: 20px;
